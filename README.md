@@ -1,2 +1,1 @@
-# classprojects
-Class projects
+Armand's class projects
