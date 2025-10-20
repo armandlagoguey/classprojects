@@ -34,28 +34,28 @@ average3 = float((str3_score1+str3_score2+str3_score3)/3)
 results= open('results.txt', "w")
 
 if average1 >= 70.0:
-    results.writelines(f"{str1_student_id} {average1:.2f} Pass\n")
+    results.write(f"{str1_student_id} {average1:.2f} Pass\n")
 elif average1 >= 60.0 and str1_score3 >  65:
-    results.writelines(f"{str1_student_id} {average1:.2f} Pass\n")
+    results.write(f"{str1_student_id} {average1:.2f} Pass\n")
 else:
-    results.writelines(f"{str1_student_id} {average1:.2f} Fail\n")
+    results.write(f"{str1_student_id} {average1:.2f} Fail\n")
 
 
 
 if average2 >= 70.0:
-    results.writelines(f"{str2_student_id} {average2:.2f} Pass\n")
+    results.write(f"{str2_student_id} {average2:.2f} Pass\n")
 elif average2 >= 60.0 and str2_score3 >  65:
-    results.writelines(f"{str2_student_id} {average2:.2f} Pass\n")
+    results.write(f"{str2_student_id} {average2:.2f} Pass\n")
 else:
-    results.writelines(f"{str2_student_id} {average2:.2f} Fail\n")
+    results.write(f"{str2_student_id} {average2:.2f} Fail\n")
 
 
 
 if average3 >= 70.0:
-    results.writelines(f"{str3_student_id} {average3:.2f} Pass\n")
+    results.write(f"{str3_student_id} {average3:.2f} Pass\n")
 elif average3 >= 60.0 and str3_score3 >  65:
-    results.writelines(f"{str3_student_id} {average3:.2f} Pass\n")
+    results.write(f"{str3_student_id} {average3:.2f} Pass\n")
 else:
-    results.writelines(f"{str3_student_id} {average3:.2f} Fail\n")
+    results.write(f"{str3_student_id} {average3:.2f} Fail\n")
 
 results.close()
